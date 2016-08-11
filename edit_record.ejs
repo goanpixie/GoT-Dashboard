@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    .hidden{
+      display: none;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+
+    <form class="form4" action="/update/<%= users._id %>" method="post">
+          Game of thrones character: <input id="name" type='text' name="name"><br/>
+          Main trait:<input id="trait" type='text' name="trait" ><br/>
+          <div class="hidden" name="id"><%= users.id %></div>
+          <button class="btn">submit</button>
+    </form>
+  </body>
+</html>
